@@ -1,0 +1,24 @@
+{
+  "name": "sample_mern_app",
+  "version": "1.0.0",
+  "description": "project",
+  "homepage": "https://github.com/hasiniaedlapalli0207/sample_mern_app#readme",
+  "bugs": {
+    "url": "https://github.com/hasiniaedlapalli0207/sample_mern_app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasiniaedlapalli0207/sample_mern_app.git"
+  },
+  "license": "ISC",
+  "author": "hasini",
+  "type": "commonjs",
+  "main": "6",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  }
+}
