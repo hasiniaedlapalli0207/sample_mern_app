@@ -1,8 +1,9 @@
 let express=require("express");
 let router=express.Router();
-
-router.get("/viewemployees",(req,res)=>{
-    res.send("view employees route");
+let {users}=require('../models/users');
+router.get("/viewemployees",async(req,res)=>{
+    let result = await users.find();
+    res.send(result);
 
 });
 router.post("/assign-task",(req,res)=>{
