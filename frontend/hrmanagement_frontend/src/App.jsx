@@ -1,31 +1,35 @@
 import { useState } from 'react'
+
 import './App.css'
 import Header_app from './components/Header_app'
-import footer from './components/footer'
+import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Routes,Route} from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import About from './pages/About.jsx'
-import Contact from './pages/Contact.jsx'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import {Routes,Route}from 'react-router-dom'
+import AdminLogin from './pages/adminlogin'
+import AdminHome from './pages/AdminHome'
 
 function App() {
-  
-  return (
+  return(
     <div>
-      <Header_app/>
-      <Routes>
-        <Route path="/" element ={<Home></Home>}></Route>
-        <Route path="/About" element ={<About></About>}></Route>
-        <Route path="/Contact" element ={<Contact></Contact>}></Route>
+  
+<Header_app />
+ <Routes>
+  <Route path="/" element={<Home></Home>}></Route>
+<Route path="/About" element={<About></About>}></Route>
+<Route path="/Contact" element={<Contact></Contact>}></Route>
+<Route path="/adminlogin" element={<AdminLogin></AdminLogin>}></Route>
 
-    
+  
+ </Routes>
+  
+        <Footer />
 
-      </Routes>
-      
-    </div>
-
-
-
+       
+     
+  </div>
   )
 }
 
